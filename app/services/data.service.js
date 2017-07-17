@@ -7,8 +7,7 @@ app.service('$dataService', ['$http', '$rootScope', '$window','$appFile',
           headers: {}
         };
 
-        //var authtoken = $rootScope.temporary_user_auth_token;
-        var authtoken ="aa03ca0f9c0de37efcbae11d32f646f8f42ba5e4db17dc4ee960427535fe23c1683bd86b0d9c7a4e70830e30e166841c";
+        var authtoken = $rootScope.temporary_user_auth_token;
         if ($rootScope.currentUser && $rootScope.currentUser.id) {
           authtoken = $rootScope.user_auth_token;
         } else {
