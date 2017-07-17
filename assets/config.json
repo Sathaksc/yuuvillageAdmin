@@ -1,0 +1,36 @@
+{
+  "api_domain": "http://www.yuuvillage.com",
+  "vc_domain_path": "",
+  "ionic_channel": "dev",
+  "version": "1.0.19",
+  "imgS3Https": true,
+  "gaTrackingId": "UA-52212365-6",
+  "socialconnect": {
+    "facebook_id": "240095419421069",
+    "twitter_client_id": "bfHb4HuCmxOrFWSFvjuivg",
+    "twitter_client_secret": "j7KwAgDZLWU3xLxEV4KxfM2DbhvioNVp6YB5l6pk70",
+    "google_ioskey": "561585674614-egah7j6g8f7ok1uevii7go1k26h4qg1t.apps.googleusercontent.com",
+    "assets": [
+      {
+        "id": "facebook",
+        "icon": "img/social/fb.jpg"
+      },
+      {
+        "id": "twitter",
+        "icon": "img/social/twitter.jpg"
+      },
+      {
+        "id": "google",
+        "icon": "img/social/google.jpg"
+      }
+    ]
+  },
+  "platform_feature": {
+    "scratch_card": false,
+    "zoocash": false,
+    "ticket": false,
+    "phone_auth": false,
+    "cash_on_delivery": true
+  },
+  "comment": "In case of virtual domain setting e.g. 'api_domain': 'http://yuuzoofc.yuuzoo.com', 'vc_domain_path' : '/virtual/yuuzoofc.yuuzoo.com/'"
+}
