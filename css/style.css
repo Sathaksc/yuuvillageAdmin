@@ -1,0 +1,49 @@
+.row
+{
+	width:100%;
+}
+.column
+{
+	width:40%;
+
+}
+.column1
+{
+	width:60%;
+	float:right;
+	margin-top:-550px;
+	margin-right:-120px;
+}
+#form
+{
+padding:0px 0px -10px 0px;
+}
+
+a
+{
+	color:#333333;
+}
+a:hover
+{
+	color:#333333;
+	text-decoration:none;
+}
+.button
+{
+	background: linear-gradient(#b1bd2a,#93a129);
+	border:none;
+	border-radius:20px;
+	width:20%;
+	height:5%;
+	color:#ffffff;
+	
+}
+.form-control
+{
+	width:50%;
+}
+#s1>p
+{
+	margin-top: 185px;
+
+}
