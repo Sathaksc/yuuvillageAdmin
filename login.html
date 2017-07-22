@@ -1,21 +1,46 @@
-<div class="container" ng-app="myApp">
-  <div class="row">
-				<div class="column">
-					<img src="images/Layer3.png"  height="100%">
-				</div>
-				<div class="column1">
-					<img src="images/Layer1.png" height="150px" width="40%"> 
-					<br><br>
-					<form method="POST" action="#">
-						<input type="text" name="uname" placeholder="Username" class="form-control" > <br><br>
-						<input type="text" name="password" placeholder="Password" class="form-control"> <br><br>
-						<a href="#">Forgot Password</a> &nbsp;&nbsp;&nbsp;
-					<button class="button">Signin &nbsp;<img src="images/Layer2.png" width="15%"></button>
-				</form>
-				<span id="s1">
-					<p>© 2017 Tribe nation.All rights reserved</p>
-				</span>
-				</div>
-			</div>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
   
-</div>
+<div class="container" ng-app="myApp">
+  <div class="row1">
+    <div class="col-md-13" style="width: 100%;">
+      <div class="page-header1">
+        <h1>{{ title }}</h1>
+      </div>
+    </div>
+    <div ui-view></div>
+  </div>
+    <div class="col-md-14">
+      <img src="assets/layer3.png" alt="tribe" action="tribe" class="layer3">
+      <form method="POST" name="addItem" role="form" ng-submit="saveAdd()">
+        <div class="col-md-4" style= "margin-right: 120px;">
+          <div class="form-group">
+            <div class="layer1">
+              <img src="assets/layer1.png" alt="tribe" action="tribenation"  style=" width: 100%; height: 60%;     margin-top: 70px;
+    margin-right: 100px;" >
+              </div>
+
+           
+          </div> 
+          <div class="form-group">
+           <input type="text" class="form-control" ng-model="form.username" placeholder="username" required=""/><br>
+            <input type="password" class="form-control" ng-model="form.password" placeholder="password" required=""/>
+          </div>
+          <div class="form-group">
+             <type="submit" >Forget Fassword
+            <button type="submit"  class="btn btn-success" style=" border-radius: 80px;">Sign in <img src="assets/layer2.png" alt="sign" action="login" style="    width: 20%;" ></button>
+            <span class="text-danger">{{ error }}</span>
+          </div>
+
+        </div>
+      </form>
+     
+          <p class="copy" style="  margin-top: -42px;
+    margin-left: -35px;"> © 2017 Tribe nation.All rights reserved</p>
+     </div>
+</html>
